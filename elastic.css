@@ -962,10 +962,33 @@ input[type='radio'] {
   display: block;
   height: 100%;
   left: 0;
-  opacity: 0.7;
+  opacity: 0.65;
   position: absolute;
   top: 0;
   width: 100%;
+}
+.scroll-icon {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  display: block;
+  font-size: 35px;
+  height: 50px;
+  margin: 0 auto;
+  opacity: 0.9;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 50px;
+  z-index: 1029;
+}
+.scroll-icon color,
+.scroll-icon:visited {
+  color: #fff;
+}
+.scroll-icon:hover,
+.scroll-icon:active {
+  color: #fff;
+  opacity: 1;
 }
 .section-sm {
   padding: 5rem 0;
@@ -1000,6 +1023,15 @@ input[type='radio'] {
 .uppercase {
   text-transform: uppercase;
 }
+.xs {
+  font-size: 1.4rem;
+}
+.small {
+  font-size: 1.6rem;
+}
+.medium {
+  font-size: 1.8rem;
+}
 .xl {
   font-size: 2.6rem;
 }
@@ -1010,14 +1042,23 @@ input[type='radio'] {
   font-size: 4rem;
 }
 .jumbo {
-  font-size: 5rem;
+  font-size: 4.5rem;
   letter-spacing: 0.1rem;
 }
 .hero {
-  font-size: 5.5rem;
+  font-size: 5rem;
   letter-spacing: 0.1rem;
 }
 @media (min-width: 550px) {
+  .xs {
+    font-size: 1.6em;
+  }
+  .small {
+    font-size: 1.8em;
+  }
+  .medium {
+    font-size: 2.4rem;
+  }
   .xl {
     font-size: 3rem;
   }
@@ -1046,6 +1087,10 @@ input[type='radio'] {
 .space-50 {
   display: block;
   height: 5rem;
+}
+.big-space {
+  display: block;
+  height: 20rem;
 }
 .full-width {
   width: 100%;
@@ -1139,4 +1184,7 @@ input[type='radio'] {
 }
 .padding-0 {
   padding: 0;
+}
+.white {
+  color: #fff;
 }

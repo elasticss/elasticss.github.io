@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://use.fontawesome.com/df8ec2625f.js"></script>
     <title>ELASTICSS</title>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/darcula.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
@@ -396,31 +397,53 @@
       <div class="container">
         <h1 class="text-center uppercase text-primary">Background images</h1>
       </div>
+      <header class="bg-img">
+        <div class="filter image" style="background-image:url('https://source.unsplash.com/category/buildings');"></div>
+        <div class="content">
+          <div class="title">
+            <h1 class="hero uppercase margin-0"><strong>Background image</strong></h1>
+            <h2 class="light medium">Random background image powered by https://source.unsplash.com/</h2>
+          </div>
+        </div>
+      </header>
+      <div class="space"></div>
       <header class="bg-img bg-img-full">
         <div class="filter image" style="background-image:url('https://source.unsplash.com/category/nature');"></div>
         <div class="content">
           <div class="title">
             <h1 class="hero uppercase margin-0"><strong>Full header</strong></h1>
-            <h2 class="light">Random background image powered by https://source.unsplash.com/</h2>
-          </div>
-        </div>
-      </header>
-      <div class="space"></div>
-      <header class="bg-img">
-        <div class="filter image" style="background-image:url('https://source.unsplash.com/category/buildings');"></div>
-        <div class="content">
-          <div class="title">
-            <h1 class="jumbo uppercase margin-0"><strong>Background image</strong></h1>
-            <h2 class="light">Random background image powered by https://source.unsplash.com/</h2>
+            <h2 class="light medium">Random background image powered by https://source.unsplash.com/</h2><a class="scroll-icon" href data-scroll="true" data-id="#scroll"><i class="fa fa-angle-down full-width"></i></a>
           </div>
         </div>
       </header>
     </section>
+    <div class="big-space"></div>
     <div class="container">
-      <h2>And more...</h2>
+      <section id="scroll">
+        <h1>And more to come...</h1>
+      </section>
     </div>
-    <div class="space-50"></div>
+    <div class="big-space"></div>
+    <div class="big-space"></div>
+    <div class="big-space"></div>
+    <div class="big-space"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+      hljs.initHighlightingOnLoad();
+      $('a[data-scroll="true"]').click(function (e) {
+          var scroll_target = $(this).data('id');
+          var scroll_trigger = $(this).data('scroll');
+      
+          if (scroll_trigger == true && scroll_target !== undefined) {
+              e.preventDefault();
+      
+              $('html, body').animate({
+                  scrollTop: $(scroll_target).offset().top - 50
+              }, 1000);
+          }
+      
+      });
+    </script>
   </body>
 </html>
