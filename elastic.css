@@ -918,6 +918,55 @@ input[type='radio'] {
 .card .card-content {
   padding: 0 25px 25px;
 }
+.bg-img {
+  height: 65vh;
+  position: relative;
+  width: 100%;
+}
+.bg-img > .image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 65vh;
+  width: 100%;
+}
+.bg-img .content {
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.bg-img .content .title {
+  color: #fff;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 1px 5px rgba(0,0,0,0.2);
+  top: 40%;
+  vertical-align: center;
+}
+.bg-img-full {
+  height: 100vh;
+}
+.bg-img-full > .image {
+  height: 100vh;
+}
+.filter {
+  color: #fff;
+  height: 100%;
+  position: relative;
+}
+.filter:before {
+  background: #292929;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 .section-sm {
   padding: 5rem 0;
 }
@@ -962,6 +1011,11 @@ input[type='radio'] {
 }
 .jumbo {
   font-size: 5rem;
+  letter-spacing: 0.1rem;
+}
+.hero {
+  font-size: 5.5rem;
+  letter-spacing: 0.1rem;
 }
 @media (min-width: 550px) {
   .xl {
@@ -975,6 +1029,10 @@ input[type='radio'] {
   }
   .jumbo {
     font-size: 6rem;
+  }
+  .hero {
+    font-size: 7rem;
+    letter-spacing: 0.2rem;
   }
 }
 .space {
