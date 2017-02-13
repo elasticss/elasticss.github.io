@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400");
 .default,
 .hover-default:hover {
-  background-color: #9e9e9e;
+  background-color: default;
   color: #fff;
 }
 .primary,
@@ -32,7 +32,7 @@
 }
 .text-default,
 .hover-text-default:hover {
-  color: #9e9e9e;
+  color: default;
 }
 .text-primary,
 .hover-text-primary:hover {
@@ -56,7 +56,7 @@
 }
 .border-default,
 .hover-border-default:hover {
-  border-color: #9e9e9e;
+  border-color: default;
 }
 .border-primary,
 .hover-border-primary:hover {
