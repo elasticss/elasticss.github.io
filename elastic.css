@@ -341,7 +341,6 @@ input[type='submit'].btn-clear[disabled]:hover {
 }
 body {
   color: #222;
-  font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
 .serif {
   font-family: 'Roboto Slab', serif;
@@ -1008,6 +1007,7 @@ input[type='radio'] {
 .scroll-icon {
   border: 1px solid #fff;
   border-radius: 50%;
+  color: #fff,;
   cursor: pointer;
   display: block;
   font-size: 35px;
@@ -1019,7 +1019,6 @@ input[type='radio'] {
   width: 50px;
   z-index: 1029;
 }
-.scroll-icon color,
 .scroll-icon:visited {
   color: #fff;
 }
@@ -1057,6 +1056,9 @@ input[type='radio'] {
 }
 .light {
   font-weight: 100;
+}
+.light-bold {
+  font-weight: 400;
 }
 .uppercase {
   text-transform: uppercase;
